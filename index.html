@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - StressLess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass-card">
+  <h2>StressLess</h2>
+  <p>Login to continue</p>
+
+  <input type="text" id="user" placeholder="Username"><br><br>
+  <input type="password" placeholder="Password"><br><br>
+
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+  let user = document.getElementById("user").value;
+  if(user !== ""){
+    localStorage.setItem("user", user);
+    window.location.href = "index.html";
+  } else {
+    alert("Enter username");
+  }
+}
+</script>
+
+</body>
+</html>
