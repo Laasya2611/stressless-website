@@ -21,7 +21,7 @@ function login(){
   let user = document.getElementById("user").value;
   if(user !== ""){
     localStorage.setItem("user", user);
-    window.location.href = "./dashboard.html";
+    window.location.href = "dashboard.html";
   } else {
     alert("Enter username");
   }
